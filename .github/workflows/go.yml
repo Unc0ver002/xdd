@@ -20,7 +20,7 @@ jobs:
 
     - name: Build
       run: |
-          cd ./xdd
+          #cd ./xdd
           go get github.com/mitchellh/gox
           CGO_ENABLED=1 gox -os "windows linux" -arch "amd64 arm arm64"
           ls
